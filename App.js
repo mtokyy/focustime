@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -6,12 +6,12 @@ import {
   SafeAreaView,
   Platform,
   StatusBar,
-} from 'react-native';
-import Constants from 'expo-constants';
-import { colors } from './src/utils/colors';
-import { Focus } from './src/features/focus';
-import { Timer } from './src/features/timer';
-import { FocusHistory } from './src/features/focusHistory';
+} from "react-native";
+import Constants from "expo-constants";
+import { colors } from "./src/utils/colors";
+import { Focus } from "./src/features/focus";
+import { Timer } from "./src/features/timer";
+import { FocusHistory } from "./src/features/focusHistory";
 
 export default function App() {
   const [currentSubject, setCurrentSubject] = useState();
@@ -40,7 +40,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     backgroundColor: colors.darkBlue,
   },
 });
